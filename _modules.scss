@@ -1,0 +1,27 @@
+@mixin base-style() {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #5D5D5D;
+}
+
+@mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+@mixin flex-area-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

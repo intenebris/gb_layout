@@ -1,0 +1,33 @@
+.footer {
+    background: #222224;
+    padding: 24px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__info {
+    font-size: 16px;
+    color: #FBFBFB;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+.footer__icon {
+    transition: all 0.2s;
+}
+
+.footer__icon:hover .footer__icon_path {
+    fill: #F16D7F;
+}
+
+.footer__icon:hover .footer__icon_path2 {
+    fill: #fff;
+}

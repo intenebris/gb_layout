@@ -1,0 +1,38 @@
+.breadcrumb {
+    background: $priorityBackground;
+    width: 100%;
+    padding: 60px 0;
+    &__inner {
+        @include flex-space-between;
+        text-transform: uppercase;
+    }
+    &__title {
+        color: $priorityColor;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    &__nav {
+        @include flex-space-between;
+        gap: 8px;
+    }
+    &__link {
+        color: #636363;
+        font-weight: 300;
+        font-size: 14px;
+    }
+    &__link:hover {
+        text-decoration: underline;
+    }
+    &__link::after {
+        content: '/';
+        padding-left: 7px;
+    }
+    &__link:last-child {
+        color: $priorityColor;
+        font-weight: 600;
+        &::after {
+            content: '';
+            padding-left: 0;
+        }
+    }
+}

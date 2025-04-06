@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="center">
+            <div class="header__inner">
+                <div class="header__items">
+                    <a href="index.html" class="header__logo"><img class="header__logo_icon" src="img/logo.png"
+                            alt="logo"></a>
+                    <a href="#" class="header__item header__search"><img src="img/search-icon.svg" alt="find"
+                            class="header__icon"></a>
+                </div>
+                <nav class="header__items">
+                    <div class="header__menu">
+                        <nav class="header__menu_box">
+                            <h4 class="header__menu_title">Menu</h4>
+                            <div class="header__menu_category">
+                                <h5 class="header__menu_subtitle">Man</h5>
+                                <ul class="header__menu_list">
+                                    <li class="header__menu_item"><a href="#" class="header__menu_link">Accessories</a>
+                                    </li>
+                                    <li class="header__menu_item"><a href="#" class="header__menu_link">Bags</a></li>
+                                    <li class="header__menu_item"><a href="#" class="header__menu_link">Denim</a></li>
+                                    <li class="header__menu_item"><a href="#" class="header__menu_link">T-Shirts</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__menu_category">
+                                <h5 class="header__menu_subtitle">Woman</h5>
+                                <ul class="header__menu_list">
+                                    <li class="header__menu_item"><a href="#" class="header__menu_link">Accessories</a>
+                                    </li>
+                                    <li class="header__menu_item"><a href="#" class="header__menu_link">Jackets &
+                                            Coats</a>
+                                    </li>
+                                    <li class="header__menu_item"><a href="#" class="header__menu_link">Polos</a></li>
+                                    <li class="header__menu_item"><a href="#" class="header__menu_link">T-Shirts</a>
+                                    </li>
+                                    <li class="header__menu_item"><a href="#" class="header__menu_link">Shirts</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__menu_category">
+                                <h5 class="header__menu_subtitle">Kids</h5>
+                                <ul class="header__menu_list">
+                                    <li class="header__menu_item"><a href="#" class="header__menu_link">Accessories</a>
+                                    </li>
+                                    <li class="header__menu_item"><a href="#" class="header__menu_link">Jackets &
+                                            Coats</a>
+                                    </li>
+                                    <li class="header__menu_item"><a href="#" class="header__menu_link">Polos</a></li>
+                                    <li class="header__menu_item"><a href="#" class="header__menu_link">T-Shirts</a>
+                                    </li>
+                                    <li class="header__menu_item"><a href="#" class="header__menu_link">Shirts</a></li>
+                                    <li class="header__menu_item"><a href="#" class="header__menu_link">Bags</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <a href="#" class="header__item header__menu_button"><img src="img/hamburger-icon.svg"
+                                alt="icon menu"></a>
+                    </div>
+                    <a href="#" class="header__item header__user"><img src="img/user-icon.svg" alt="icon user"></a>
+                    <a href="#" class="header__item header__cart"><img src="img/goods-icon.svg" alt="icon cart"></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="breadcrumb">
+        <div class="center breadcrumb__inner">
+            <h2 class="breadcrumb__title">NEW ARRIVALS</h2>
+            <nav class="breadcrumb__nav">
+                <a href="index.html" class="breadcrumb__link">Home</a>
+                <a href="#" class="breadcrumb__link">Men</a>
+                <a href="#" class="breadcrumb__link">NEW ARRIVALS</a>
+            </nav>
+        </div>
+    </section>
+    <section class="product center">
+        <div class="product__filter">
+            <div class="product__filter-box">
+                <button class="product__filter-btn" onclick="">
+                    <div class="product__filter-name">Filter</div>
+                    <div class="product__filter-icon">
+                        <svg class="product__filter-icon_svg" width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                </button>
+                <ul class="product__filter-list">
+                    <li class="product__filter-item">
+                        <p class="product__filter-category">CATEGORY</p>
+                        <a href="#" class="product__filter-link">Accessories</a>
+                        <a href="#" class="product__filter-link">Bags</a>
+                        <a href="#" class="product__filter-link">Denim</a>
+                        <a href="#" class="product__filter-link">Hoodies & Sweatshirts</a>
+                        <a href="#" class="product__filter-link">Jackets & Coats</a>
+                        <a href="#" class="product__filter-link">Polos</a>
+                        <a href="#" class="product__filter-link">Shirts</a>
+                        <a href="#" class="product__filter-link">Shoes</a>
+                        <a href="#" class="product__filter-link">Sweaters & Knits</a>
+                        <a href="#" class="product__filter-link">T-Shirts</a>
+                        <a href="#" class="product__filter-link">Tanks</a>
+                    </li>
+                    <li class="product__filter-item">
+                        <p class="product__filter-category">BRAND</p>
+                    </li>
+                    <li class="product__filter-item">
+                        <p class="product__filter-category">DESIGNER</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="product__filter-center">
+                <div class="product__filter-option">
+                    <button class="product__filter-select" onclick="">TRENDING NOW
+                        <svg width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
+                            </svg>
+                    </button>
+                    <div class="product__filter-area">
+                        <label><input type="checkbox" name="category" value="discount">30% off</label>
+                        <label><input type="checkbox" name="category" value="hot">Hot deal</label>
+                        <label><input type="checkbox" name="category" value="new">New arrivals</label>
+                    </div>
+                </div>
+                <div class="product__filter-option">
+                    <button class="product__filter-select" onclick="">Size
+                        <svg width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
+                            </svg>       
+                    </button>
+                    <div class="product__filter-area">
+                        <label class="product__filter-area-input"><input type="checkbox" name="category" value="XS">XS</label>
+                        <label class="product__filter-area-input"><input type="checkbox" name="category" value="S">S</label>
+                        <label class="product__filter-area-input"><input type="checkbox" name="category" value="M">M</label>
+                        <label class="product__filter-area-input"><input type="checkbox" name="category" value="L">L</label>
+                    </div>
+                </div>
+                <div class="product__filter-option">
+                    <button class="product__filter-select" onclick="">Price
+                        <svg width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
+                            </svg>
+                    </button>
+                    <div class="product__filter-area">
+                        <input type="range" id="price-max" min="100" max="1000000" step="100" value="5000">
+                        <p class="price-values">0 ₽ - 100000 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="product__items">
+            <article class="product__item">
+                <div class="product__item_top">
+                    <img src="img/good1.png" alt="goods" class="product__photo">
+                    <div class="product__hover_wraper">
+                        <a href="#" class="product__hover_button">
+                            <img src="img/goods-icon.svg" alt="" class="product__hover_icon">
+                            <p class="product__hover_link">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product__item_bottom">
+                    <h4 class="product__name">ELLERY X M'O CAPSULE</h4>
+                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product__item">
+                <div class="product__item_top">
+                    <img src="img/good2.png" alt="goods" class="product__photo">
+                    <div class="product__hover_wraper">
+                        <a href="#" class="product__hover_button">
+                            <img src="img/goods-icon.svg" alt="" class="product__hover_icon">
+                            <p class="product__hover_link">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product__item_bottom">
+                    <h4 class="product__name">ELLERY X M'O CAPSULE</h4>
+                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product__item">
+                <div class="product__item_top">
+                    <img src="img/good3.png" alt="goods" class="product__photo">
+                    <div class="product__hover_wraper">
+                        <a href="#" class="product__hover_button">
+                            <img src="img/goods-icon.svg" alt="" class="product__hover_icon">
+                            <p class="product__hover_link">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product__item_bottom">
+                    <h4 class="product__name">ELLERY X M'O CAPSULE</h4>
+                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product__item">
+                <div class="product__item_top">
+                    <img src="img/good4.png" alt="goods" class="product__photo">
+                    <div class="product__hover_wraper">
+                        <a href="#" class="product__hover_button">
+                            <img src="img/goods-icon.svg" alt="" class="product__hover_icon">
+                            <p class="product__hover_link">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product__item_bottom">
+                    <h4 class="product__name">ELLERY X M'O CAPSULE</h4>
+                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product__item">
+                <div class="product__item_top">
+                    <img src="img/good6.png" alt="goods" class="product__photo">
+                    <div class="product__hover_wraper">
+                        <a href="#" class="product__hover_button">
+                            <img src="img/goods-icon.svg" alt="" class="product__hover_icon">
+                            <p class="product__hover_link">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product__item_bottom">
+                    <h4 class="product__name">ELLERY X M'O CAPSULE</h4>
+                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product__item">
+                <div class="product__item_top">
+                    <img src="img/good5.png" alt="goods" class="product__photo">
+                    <div class="product__hover_wraper">
+                        <a href="#" class="product__hover_button">
+                            <img src="img/goods-icon.svg" alt="" class="product__hover_icon">
+                            <p class="product__hover_link">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product__item_bottom">
+                    <h4 class="product__name">ELLERY X M'O CAPSULE</h4>
+                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product__item">
+                <div class="product__item_top">
+                    <img src="img/good7.jpg" alt="goods" class="product__photo">
+                    <div class="product__hover_wraper">
+                        <a href="#" class="product__hover_button">
+                            <img src="img/goods-icon.svg" alt="" class="product__hover_icon">
+                            <p class="product__hover_link">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product__item_bottom">
+                    <h4 class="product__name">ELLERY X M'O CAPSULE</h4>
+                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product__item">
+                <div class="product__item_top">
+                    <img src="img/good8.jpg" alt="goods" class="product__photo">
+                    <div class="product__hover_wraper">
+                        <a href="#" class="product__hover_button">
+                            <img src="img/goods-icon.svg" alt="" class="product__hover_icon">
+                            <p class="product__hover_link">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product__item_bottom">
+                    <h4 class="product__name">ELLERY X M'O CAPSULE</h4>
+                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product__item">
+                <div class="product__item_top">
+                    <img src="img/good9.jpg" alt="goods" class="product__photo">
+                    <div class="product__hover_wraper">
+                        <a href="#" class="product__hover_button">
+                            <img src="img/goods-icon.svg" alt="" class="product__hover_icon">
+                            <p class="product__hover_link">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product__item_bottom">
+                    <h4 class="product__name">ELLERY X M'O CAPSULE</h4>
+                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+        </div>
+        <div class="pogination">
+            <button class="pogination__btn">&#10094;</button>
+            <div class="pogination__area">
+                <a href="#" class="pogination__link">1</a>
+                <a href="#" class="pogination__link">2</a>
+                <a href="#" class="pogination__link">3</a>
+                <a href="#" class="pogination__link">4</a>
+                <a href="#" class="pogination__link">5</a>
+                <a href="#" class="pogination__link">6</a>
+                ...
+                <a href="#" class="pogination__link">20</a>
+            </div>
+            <button class="pogination__btn">&#10095;</button>
+        </div>
+    </section>
+    
+    <div class="feature">
+        <div class="feature__container center">
+            <article class="feature__item">
+                <img src="img/feature-icon1.svg" alt="feture 1" class="feature__icon">
+                <h3 class="feature__name">Free Delivery</h3>
+                <p class="feature__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                    with extensive models.</p>
+            </article>
+            <article class="feature__item">
+                <img src="img/feature-icon2.svg" alt="feture 2" class="feature__icon">
+                <h3 class="feature__name">Sales & discounts</h3>
+                <p class="feature__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                    with extensive models.</p>
+            </article>
+            <article class="feature__item">
+                <img src="img/feature-icon2.svg" alt="feture 3" class="feature__icon">
+                <h3 class="feature__name">Quality assurance</h3>
+                <p class="feature__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                    with extensive models.</p>
+            </article>
+        </div>
+    </div>
+    <div class="subscribe">
+        <div class="subscribe__wraper">
+            <div class="subscribe__inner center">
+                <div class="subscribe__quote">
+                    <div class="subscribe__quote_pic">
+                        <img src="img/quote-pic.jpg" alt="photo autor of quote" class="subscribe__quote_img">
+                    </div>
+                    <p class="subscribe__quote_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a
+                            pulvinar purus condimentum</span>“</p>
+                </div>
+                <div class="subscribe__feedback">
+                    <h2 class="subscribe__feedback_title">SUBSCRIBE</h2>
+                    <p class="subscribe__feedback_subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form action="#" class="subscribe__feedback_form">
+                        <input type="email" class="subscribe__feedback_email" placeholder="Enter Your Email">
+                        <button type="submit" class="subscribe__feedback_btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__container center">
+            <p class="footer__info">© 2022 Brand All Rights Reserved.</p>
+            <div class="validated">
+                <p>
+                    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px"
+                            src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Правильный CSS!" />
+                    </a>
+                </p>
+
+            </div>
+            <div class="footer__socials">
+                <a href="#" class="footer__link">
+                    <svg class="footer__icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class="footer__icon_path" d="M32 0H0V32H32V0Z" fill="white" />
+                        <g clip-path="url(#clip0_190_1604)">
+                            <path class="footer__icon_path2"
+                                d="M19.4218 16.28L19.8476 13.616H17.1852V11.8873C17.1852 11.1585 17.5571 10.4481 18.7495 10.4481H19.9599V8.17997C19.9599 8.17997 18.8615 8 17.8114 8C15.6188 8 14.1857 9.27593 14.1857 11.5857V13.616H11.7485V16.28H14.1857V22.72H17.1852V16.28H19.4218Z"
+                                fill="black" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_190_1604">
+                                <rect width="10.1063" height="16" fill="white" transform="translate(11.1169 8)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="#" class="footer__link">
+                    <svg class="footer__icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class="footer__icon_path" d="M32 0H0V32H32V0Z" fill="white" />
+                        <g clip-path="url(#clip0_190_1608)">
+                            <path class="footer__icon_path2"
+                                d="M15.6681 12.6816C13.516 12.6816 11.7802 14.3849 11.7802 16.4967C11.7802 18.6084 13.516 20.3117 15.6681 20.3117C17.8202 20.3117 19.5561 18.6084 19.5561 16.4967C19.5561 14.3849 17.8202 12.6816 15.6681 12.6816ZM15.6681 18.9769C14.2774 18.9769 13.1404 17.8646 13.1404 16.4967C13.1404 15.1287 14.274 14.0164 15.6681 14.0164C17.0623 14.0164 18.1958 15.1287 18.1958 16.4967C18.1958 17.8646 17.0589 18.9769 15.6681 18.9769ZM20.622 12.5256C20.622 13.0203 20.2159 13.4154 19.7151 13.4154C19.211 13.4154 18.8083 13.017 18.8083 12.5256C18.8083 12.0342 19.2143 11.6357 19.7151 11.6357C20.2159 11.6357 20.622 12.0342 20.622 12.5256ZM23.1971 13.4287C23.1395 12.2367 22.8621 11.1808 21.9721 10.3109C21.0856 9.441 20.0095 9.16873 18.7948 9.10897C17.5428 9.03924 13.7901 9.03924 12.5381 9.10897C11.3267 9.16541 10.2507 9.43768 9.36075 10.3076C8.47081 11.1775 8.19672 12.2334 8.13581 13.4254C8.06475 14.6539 8.06475 18.3361 8.13581 19.5646C8.19334 20.7566 8.47081 21.8125 9.36075 22.6824C10.2507 23.5523 11.3233 23.8246 12.5381 23.8844C13.7901 23.9541 17.5428 23.9541 18.7948 23.8844C20.0095 23.8279 21.0856 23.5556 21.9721 22.6824C22.8587 21.8125 23.1362 20.7566 23.1971 19.5646C23.2681 18.3361 23.2681 14.6572 23.1971 13.4287ZM21.5796 20.8828C21.3157 21.5336 20.8047 22.0349 20.1381 22.2972C19.1399 22.6857 16.7712 22.5961 15.6681 22.5961C14.565 22.5961 12.193 22.6824 11.1981 22.2972C10.5349 22.0383 10.024 21.5369 9.75665 20.8828C9.36075 19.9033 9.45211 17.5791 9.45211 16.4967C9.45211 15.4142 9.36413 13.0867 9.75665 12.1105C10.0206 11.4597 10.5315 10.9584 11.1981 10.6961C12.1964 10.3076 14.565 10.3972 15.6681 10.3972C16.7712 10.3972 19.1433 10.3109 20.1381 10.6961C20.8013 10.9551 21.3123 11.4564 21.5796 12.1105C21.9755 13.09 21.8842 15.4142 21.8842 16.4967C21.8842 17.5791 21.9755 19.9066 21.5796 20.8828Z"
+                                fill="black" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_190_1608">
+                                <rect width="15.1594" height="17" fill="white" transform="translate(8.08508 8)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="#" class="footer__link">
+                    <svg class="footer__icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class="footer__icon_path" d="M32 0H0V32H32V0Z" fill="white" />
+                        <g clip-path="url(#clip0_190_1616)">
+                            <path class="footer__icon_path2"
+                                d="M16.5489 8.20312C13.3086 8.20312 10.1062 10.3406 10.1062 13.8C10.1062 16 11.3568 17.25 12.1148 17.25C12.4275 17.25 12.6075 16.3875 12.6075 16.1438C12.6075 15.8531 11.859 15.2344 11.859 14.025C11.859 11.5125 13.7918 9.73125 16.2931 9.73125C18.4439 9.73125 20.0356 10.9406 20.0356 13.1625C20.0356 14.8219 19.3629 17.9344 17.1837 17.9344C16.3973 17.9344 15.7246 17.3719 15.7246 16.5656C15.7246 15.3844 16.5584 14.2406 16.5584 13.0219C16.5584 10.9531 13.5929 11.3281 13.5929 13.8281C13.5929 14.3531 13.6592 14.9344 13.896 15.4125C13.4602 17.2688 12.5696 20.0344 12.5696 21.9469C12.5696 22.5375 12.6549 23.1188 12.7117 23.7094C12.8191 23.8281 12.7654 23.8156 12.9296 23.7563C14.5214 21.6 14.4645 21.1781 15.1846 18.3562C15.5731 19.0875 16.5774 19.4812 17.3732 19.4812C20.7272 19.4812 22.2337 16.2469 22.2337 13.3313C22.2337 10.2281 19.524 8.20312 16.5489 8.20312Z"
+                                fill="black" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_190_1616">
+                                <rect width="12.1275" height="16" fill="white" transform="translate(10.1062 8)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="#" class="footer__link">
+                    <svg class="footer__icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class="footer__icon_path" d="M32 0H0V32H32V0Z" fill="white" />
+                        <g clip-path="url(#clip0_190_1612)">
+                            <path class="footer__icon_path2"
+                                d="M22.5929 12.7411C22.6032 12.8832 22.6032 13.0253 22.6032 13.1675C22.6032 17.5025 19.2687 22.4974 13.1741 22.4974C11.2965 22.4974 9.55229 21.9593 8.08508 21.0253C8.35186 21.0558 8.60833 21.0659 8.88537 21.0659C10.4346 21.0659 11.8608 20.5482 12.9997 19.6649C11.5427 19.6345 10.3218 18.6903 9.90111 17.3908C10.1063 17.4213 10.3115 17.4416 10.527 17.4416C10.8245 17.4416 11.1221 17.4009 11.3991 17.3299C9.88062 17.0253 8.7417 15.7055 8.7417 14.1116V14.071C9.18287 14.3147 9.69592 14.467 10.2397 14.4873C9.34704 13.8984 8.76223 12.8933 8.76223 11.7563C8.76223 11.1472 8.92637 10.5888 9.21367 10.1015C10.845 12.0913 13.2972 13.3908 16.0469 13.5329C15.9956 13.2893 15.9648 13.0355 15.9648 12.7817C15.9648 10.9746 17.4423 9.5025 19.2789 9.5025C20.233 9.5025 21.0949 9.89844 21.7003 10.538C22.4492 10.3959 23.1674 10.1218 23.8036 9.74616C23.5573 10.5076 23.0341 11.1472 22.3466 11.5533C23.0136 11.4822 23.6599 11.2994 24.255 11.0457C23.8036 11.6954 23.2393 12.274 22.5929 12.7411Z"
+                                fill="black" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_190_1612">
+                                <rect width="16.17" height="16" fill="white" transform="translate(8.08508 8)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
