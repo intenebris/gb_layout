@@ -111,6 +111,102 @@ table {
   border-spacing: 0;
 }
 
+input[type=checkbox] {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+summary {
+  display: block;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+ul, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+@keyframes wobble-ver-left {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateY(-17px) rotate(-6deg);
+  }
+  30% {
+    transform: translateY(12px) rotate(6deg);
+  }
+  45% {
+    transform: translateY(-12px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateY(7px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateY(-4px) rotate(-1.2deg);
+  }
+}
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 body {
   overflow-x: hidden;
 }
@@ -222,6 +318,52 @@ summary::-webkit-details-marker {
   animation: wobble-ver-left 0.8s both;
 }
 
+.breadcrumb {
+  background: #F8F3F4;
+  width: 100%;
+  padding: 60px 0;
+}
+.breadcrumb__inner {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.breadcrumb__title {
+  color: #F16D7F;
+  font-size: 24px;
+  font-weight: 400;
+}
+.breadcrumb__nav {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  gap: 8px;
+}
+.breadcrumb__item {
+  color: #636363;
+  font-weight: 300;
+  font-size: 14px;
+}
+.breadcrumb__link:hover {
+  text-decoration: underline;
+  color: #F16D7F;
+}
+.breadcrumb__item::after {
+  content: "/";
+  padding-left: 7px;
+}
+.breadcrumb__item:last-child {
+  color: #F16D7F;
+  font-weight: 600;
+}
+.breadcrumb__item:last-child::after {
+  content: "";
+  padding-left: 0;
+}
+
 .footer {
   background: #222224;
   padding: 24px 0;
@@ -256,100 +398,17 @@ summary::-webkit-details-marker {
   fill: #fff;
 }
 
-@keyframes wobble-ver-left {
-  0%, 100% {
-    transform: translateY(0) rotate(0);
-    transform-origin: 50% 50%;
-  }
-  15% {
-    transform: translateY(-17px) rotate(-6deg);
-  }
-  30% {
-    transform: translateY(12px) rotate(6deg);
-  }
-  45% {
-    transform: translateY(-12px) rotate(-3.6deg);
-  }
-  60% {
-    transform: translateY(7px) rotate(2.4deg);
-  }
-  75% {
-    transform: translateY(-4px) rotate(-1.2deg);
-  }
-}
-@keyframes heartbeat {
-  from {
-    transform: scale(1);
-    transform-origin: center center;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    transform: scale(0.91);
-    animation-timing-function: ease-in;
-  }
-  17% {
-    transform: scale(0.98);
-    animation-timing-function: ease-out;
-  }
-  33% {
-    transform: scale(0.87);
-    animation-timing-function: ease-in;
-  }
-  45% {
-    transform: scale(1);
-    animation-timing-function: ease-out;
-  }
-}
-@keyframes vibrate-1 {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
-  }
-  100% {
-    transform: translate(0);
-  }
-}
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   color: #5D5D5D;
+  box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-}
-
-.center {
-  padding-left: calc(50% - 570px);
-  padding-right: calc(50% - 570px);
+* {
+  box-sizing: border-box;
 }
 
 .hero {

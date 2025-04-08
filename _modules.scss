@@ -25,3 +25,38 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
+
+input[type="checkbox"] {
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+summary {
+    display: block;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+ul, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}

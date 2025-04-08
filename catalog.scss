@@ -1,51 +1,18 @@
 @import 'reset';
-@import 'header';
-@import 'footer';
 @import 'vars';
 @import 'modules';
 @import 'animation';
+@import 'header';
 @import 'breadcrumb';
+@import 'footer';
 
 body {
-    box-sizing: border-box;
     @include base-style;
+    box-sizing: border-box;
 }
-
-*::after,
-*::before {
-    box-sizing: inherit;
+* {
+    box-sizing: border-box;
 }
-
-input {
-    margin: 0;
-    padding: 0;
-}
-
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-img {
-    max-width: 100%;
-}
-
-summary {
-    display: block;
-    cursor: pointer;
-}
-
-summary::-webkit-details-marker {
-    display: none;
-}
-
-.center {
-    padding-left: calc(50% - 570px);
-    padding-right: calc(50% - 570px);
-}
-
 
 
 .product {

@@ -1,0 +1,15 @@
+@import 'reset';
+@import 'vars';
+@import 'modules';
+@import 'animation';
+@import 'header';
+@import 'breadcrumb';
+@import 'footer';
+
+body {
+    @include base-style;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}

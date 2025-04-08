@@ -1,38 +1,18 @@
 @import 'reset';
 @import 'vars';
 @import 'modules';
-@import 'header';
-@import 'footer';
 @import 'animation';
-
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-    box-sizing: inherit;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
+@import 'header';
+@import 'breadcrumb';
+@import 'footer';
 
 body {
     @include base-style;
+    box-sizing: border-box;
 }
-
-img {
-    max-width: 100%;
+* {
+    box-sizing: border-box;
 }
-
-.center {
-    padding-left: calc(50% - 570px);
-    padding-right: calc(50% - 570px);
-}
-
 
 .hero {
     margin-bottom: 65px;

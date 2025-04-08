@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seo & Digital Marketing</title>
+    <title>Cart</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
 
 <body>
@@ -94,180 +94,65 @@
             </div>
         </div>
     </header>
-    <section class="hero">
-        <div class="center">
-            <div class="hero__inner">
-                <img class="hero__image" src="img/hero.png" alt="top model">
-                <div class="hero__content">
-                    <h1 class="hero__title">The brand</h1>
-                    <p class="hero__subtitle">of luxerious <span>fashion</span></p>
+    <section class="breadcrumb">
+        <div class="center breadcrumb__inner">
+            <h2 class="breadcrumb__title">SHOPPING CART</h2>
+            <nav class="breadcrumb__nav">
+                <li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link">Home</a></li>
+                <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Cart</a></li>
+            </nav>
+        </div>
+    </section>
+    <div class="cart center">
+        <div class="cart__left">
+            <div class="cart__goods">
+                <div class="cart__goods-item">
+                    <img src="img/cart3.jpg" alt="model 1" class="cart__goods-img">
+                    <div class="cart__goods-desc">
+                        <h3 class="cart__goods-name">MANGO PEOPLE T-SHIRT</h3>
+                        <div class="cart__goods-options">
+                            <p class="cart__goods-price">Price:<span>$300</span></p>
+                            <p class="cart__goods-color">Color:<span>Red</span></p>
+                            <p class="cart__goods-size">Size:<span>XL</span></p>
+                            <p class="cart__goods-quantity">Quantity:<input type="number" name="quantity" id="#" value="2" min="1"></p>
+                        </div>
+                        <button class="cart__goods-btn-close"></button>
+                    </div>
+                </div>
+                <div class="cart__goods-item">
+                    <img src="img/cart4.jpg" alt="model 2" class="cart__goods-img">
+                    <div class="cart__goods-desc">
+                        <h3 class="cart__goods-name">MANGO PEOPLE T-SHIRT</h3>
+                        <div class="cart__goods-options">
+                            <p class="cart__goods-price">Price:<span>$300</span></p>
+                            <p class="cart__goods-color">Color:<span>Red</span></p>
+                            <p class="cart__goods-size">Size:<span>XL</span></p>
+                            <p class="cart__goods-quantity">Quantity:<input type="number" name="quantity" id="#" value="2" min="1"></p>
+                        </div>
+                        <button class="cart__goods-btn-close"></button>
+                    </div>
                 </div>
             </div>
+            <div class="cart__left-buttons">
+                <button class="cart__left-button">CLEAR SHOPPING CART</button>
+                <button class="cart__left-button">CONTINUE SHOPPING</button>
+            </div>
         </div>
-    </section>
-    <div class="offer center">
-        <article class="offer__item">
-            <a href="product.html" class="offer__desc">
-                <p class="offer__text">30% OFF</p>
-                <h3 class="offer__name">For women</h3>
-            </a>
-            <div class="offer__image_wrap"></div>
-            <img src="img/offer1.jpg" alt="offer1" class="offer__image">
-        </article>
-        <article class="offer__item">
-            <a href="product.html" class="offer__desc">
-                <p class="offer__text">HOT DEAL</p>
-                <h3 class="offer__name">For men</h3>
-            </a>
-            <div class="offer__image_wrap"></div>
-            <img src="img/offer2.jpg" alt="offer2" class="offer__image">
-        </article>
-        <article class="offer__item">
-            <a href="product.html" class="offer__desc">
-                <p class="offer__text">NEW ARRIVALS</p>
-                <h3 class="offer__name">For kids</h3>
-            </a>
-            <div class="offer__image_wrap"></div>
-            <img src="img/offer3.jpg" alt="offer3" class="offer__image">
-        </article>
-        <article class="offer__item">
-            <a href="product.html" class="offer__desc">
-                <p class="offer__text">LUXIROUS & TRENDy</p>
-                <h3 class="offer__name">ACCESORIES</h3>
-            </a>
-            <div class="offer__image_wrap"></div>
-            <img src="img/offer4.jpg" alt="offer4" class="offer__image">
-        </article>
-    </div>
-    <section class="product center">
-        <h2 class="product__title">Fetured Items</h2>
-        <p class="product__subtitle">Shop for items based on what we featured in this week</p>
-        <div class="product__items">
-            <article class="product__item">
-                <div class="product__item_top">
-                    <img src="img/good1.png" alt="goods" class="product__photo">
-                    <div class="product__hover_wraper">
-                        <a href="#" class="product__hover_button">
-                            <img src="img/goods-icon.svg" alt="" class="product__hover_icon">
-                            <p class="product__hover_link">Add to Cart</p>
-                        </a>
-                    </div>
+        <div class="cart__right">
+            <div class="cart__order">
+                <form class="cart__order-form" action="#" method="post">
+                    <h4 class="cart__order-title">SHIPPING ADRESS</h4>
+                    <input type="text" class="cart__order-input cart__order-input_city" placeholder="Bangladesh">
+                    <input type="text" class="cart__order-input" placeholder="State">
+                    <input type="text" class="cart__order-input" placeholder="Postcode / Zip">
+                    <button class="cart__order-submit-btn" type="submit">GET A QUOTE</button>
+                </form>
+                <div class="cart__order-total">
+                    <p class="cart__order-subtotal">SUB TOTAL<span>$900</span></p>
+                    <p class="cart__order-grandtotal">GRAND TOTAL<span>$900</span></p>
+                    <button class="cart__order-checkout-btn" type="submit">PROCEED TO CHECKOUT</button>
                 </div>
-                <div class="product__item_bottom">
-                    <h4 class="product__name">ELLERY X M'O CAPSULE</h4>
-                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                        of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="product__price">$52.00</p>
-                </div>
-            </article>
-            <article class="product__item">
-                <div class="product__item_top">
-                    <img src="img/good2.png" alt="goods" class="product__photo">
-                    <div class="product__hover_wraper">
-                        <a href="#" class="product__hover_button">
-                            <img src="img/goods-icon.svg" alt="" class="product__hover_icon">
-                            <p class="product__hover_link">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="product__item_bottom">
-                    <h4 class="product__name">ELLERY X M'O CAPSULE</h4>
-                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                        of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="product__price">$52.00</p>
-                </div>
-            </article>
-            <article class="product__item">
-                <div class="product__item_top">
-                    <img src="img/good3.png" alt="goods" class="product__photo">
-                    <div class="product__hover_wraper">
-                        <a href="#" class="product__hover_button">
-                            <img src="img/goods-icon.svg" alt="" class="product__hover_icon">
-                            <p class="product__hover_link">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="product__item_bottom">
-                    <h4 class="product__name">ELLERY X M'O CAPSULE</h4>
-                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                        of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="product__price">$52.00</p>
-                </div>
-            </article>
-            <article class="product__item">
-                <div class="product__item_top">
-                    <img src="img/good4.png" alt="goods" class="product__photo">
-                    <div class="product__hover_wraper">
-                        <a href="#" class="product__hover_button">
-                            <img src="img/goods-icon.svg" alt="" class="product__hover_icon">
-                            <p class="product__hover_link">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="product__item_bottom">
-                    <h4 class="product__name">ELLERY X M'O CAPSULE</h4>
-                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                        of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="product__price">$52.00</p>
-                </div>
-            </article>
-            <article class="product__item">
-                <div class="product__item_top">
-                    <img src="img/good6.png" alt="goods" class="product__photo">
-                    <div class="product__hover_wraper">
-                        <a href="#" class="product__hover_button">
-                            <img src="img/goods-icon.svg" alt="" class="product__hover_icon">
-                            <p class="product__hover_link">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="product__item_bottom">
-                    <h4 class="product__name">ELLERY X M'O CAPSULE</h4>
-                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                        of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="product__price">$52.00</p>
-                </div>
-            </article>
-            <article class="product__item">
-                <div class="product__item_top">
-                    <img src="img/good5.png" alt="goods" class="product__photo">
-                    <div class="product__hover_wraper">
-                        <a href="#" class="product__hover_button">
-                            <img src="img/goods-icon.svg" alt="" class="product__hover_icon">
-                            <p class="product__hover_link">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="product__item_bottom">
-                    <h4 class="product__name">ELLERY X M'O CAPSULE</h4>
-                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                        of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="product__price">$52.00</p>
-                </div>
-            </article>
-        </div>
-        <a href="catalog.html" class="product__browse_btn">Browse All Product</a>
-    </section>
-    <div class="feature">
-        <div class="feature__container center">
-            <article class="feature__item">
-                <img src="img/feature-icon1.svg" alt="feture 1" class="feature__icon">
-                <h3 class="feature__name">Free Delivery</h3>
-                <p class="feature__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
-                    with extensive models.</p>
-            </article>
-            <article class="feature__item">
-                <img src="img/feature-icon2.svg" alt="feture 2" class="feature__icon">
-                <h3 class="feature__name">Sales & discounts</h3>
-                <p class="feature__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
-                    with extensive models.</p>
-            </article>
-            <article class="feature__item">
-                <img src="img/feature-icon2.svg" alt="feture 3" class="feature__icon">
-                <h3 class="feature__name">Quality assurance</h3>
-                <p class="feature__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
-                    with extensive models.</p>
-            </article>
+            </div>
         </div>
     </div>
     <div class="subscribe">
@@ -372,7 +257,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
