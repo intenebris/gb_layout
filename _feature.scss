@@ -1,0 +1,27 @@
+.feature {
+    background: #222224;
+    padding: 103px 0;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        max-width: 360px;
+        text-align: center;
+        color: #FBFBFB;
+    }
+    &__icon {
+        margin-bottom: 28px;
+    }
+    &__name {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
